@@ -9,12 +9,27 @@
             "properties": {
                 "element": {"#": "owner"}
             }
+        },
+        "main": {
+            "prototype": "ui/main.reel",
+            "properties": {
+                "element": {"#": "main"}
+            }
+        },
+        "title": {
+            "prototype": "digit/ui/title.reel",
+            "properties": {
+                "element": {"#": "title"},
+                "value": "New Artist"
+            }
         }
     }
     </script>
 </head>
 <body>
     <div data-montage-id="owner" class="MyComponent">
+        <div data-montage-id="main"></div>
+        <h1 data-montage-id="title"></h1>
     </div>
 </body>
 </html>
